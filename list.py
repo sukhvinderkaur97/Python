@@ -16,7 +16,7 @@ print(mylist)
 mylist.append("orange")
 print(mylist)
 
-mylist.insert(1, "orange")
+mylist.insert(1, "papaya")
 print(mylist)
 
 tropical = ["mango", "pineapple", "papaya"]
@@ -32,5 +32,9 @@ print(mylist)
 del mylist[4]
 print(mylist)
 
+mylist.sort()
+print(mylist)
+
 mylist.clear()
 print(mylist)
+
