@@ -17,24 +17,22 @@ print(arr[2:7:2])
 
 x = arr.copy()
 arr[0] = 42
-
-print(arr)
-print(x)
-
-arr[0] = 42
-
 print(arr)
 print(x)
 
 x = arr.view()
 x[0] = 31
-
 print(arr)
 print(x)
 
 x = arr.copy()
 y = arr.view()
-
 print(x.base)
 print(y.base)
 
+arr3 = np.array([[1, 2, 3, 4], [5, 6, 7, 8]])
+print(arr3.shape)
+
+arr4 = np.array([1, 2, 3, 4], ndmin=3)
+print(arr4)
+print('shape of array :', arr4.shape)
