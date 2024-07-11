@@ -15,3 +15,26 @@ print(arr2.ndim)
 print(arr[1:5])
 print(arr[2:7:2])
 
+x = arr.copy()
+arr[0] = 42
+
+print(arr)
+print(x)
+
+arr[0] = 42
+
+print(arr)
+print(x)
+
+x = arr.view()
+x[0] = 31
+
+print(arr)
+print(x)
+
+x = arr.copy()
+y = arr.view()
+
+print(x.base)
+print(y.base)
+
